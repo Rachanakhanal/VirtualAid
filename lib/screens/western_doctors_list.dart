@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:virtual_aid/widgets/book_appointment.dart';
+import 'package:virtual_aid/widgets/appointment.dart';
 import 'package:virtual_aid/widgets/home_screen.dart';
 
 import '../constant/constants.dart';
 import '../widgets/appbar.dart';
-import '../widgets/department_card1.dart';
 
 class Dermatology extends StatelessWidget {
   const Dermatology({super.key});
@@ -135,7 +134,7 @@ Widget doctor1i() {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => BookingScreen(),
+              builder: (context) => const BookingScreen(),
             ),
           );
         },
@@ -274,7 +273,7 @@ Widget doctor1ii() {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => BookingScreen(),
+              builder: (context) => const BookingScreen(),
             ),
           );
         },
@@ -359,7 +358,7 @@ Widget doctor1iii() {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => BookingScreen(),
+              builder: (context) => const BookingScreen(),
             ),
           );
         },
@@ -497,7 +496,7 @@ Widget doctor1iv() {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => BookingScreen(),
+              builder: (context) => const BookingScreen(),
             ),
           );
         },

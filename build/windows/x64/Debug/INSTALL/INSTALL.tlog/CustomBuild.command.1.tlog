@@ -1,0 +1,10 @@
+^C:\USERS\HP\DESKTOP\MY FINAL YEAR PROJECT\VIRTUAL_AID\BUILD\WINDOWS\CMAKEFILES\A84631F3C3A8F3A350153611C849021B\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

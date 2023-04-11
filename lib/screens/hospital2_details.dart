@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:virtual_aid/constant/constants.dart';
 import 'package:virtual_aid/widgets/appbar.dart';
-import 'package:virtual_aid/widgets/book_appointment.dart';
-import 'package:virtual_aid/widgets/custom_appbar.dart';
+import 'package:virtual_aid/widgets/appointment.dart';
 
 import '../widgets/home_screen.dart';
 
@@ -145,7 +142,7 @@ Widget doctor2i() {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => BookingScreen(),
+            builder: (context) => const BookingScreen(),
           ),
         );
       },

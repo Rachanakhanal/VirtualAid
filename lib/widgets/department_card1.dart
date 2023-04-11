@@ -15,13 +15,13 @@ Widget department1i() {
               color: Colors.white,
               child: Row(
                 children: [
-                  SizedBox(
-                    width: 100,
-                    child: Image.network(
-                      "https://www.shutterstock.com/image-vector/medical-concept-hospital-building-doctor-260nw-588196298.jpg",
-                      fit: BoxFit.fill,
-                    ),
-                  ),
+                  // SizedBox(
+                  //   width: 100,
+                  //   child: Image.network(
+                  //     "https://www.shutterstock.com/image-vector/medical-concept-hospital-building-doctor-260nw-588196298.jpg",
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
                   Flexible(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
@@ -63,8 +63,7 @@ Widget department1i() {
         ),
       ),
     );
-  }
-  );
+  });
 }
 
 Widget department1ii() {
@@ -93,22 +92,22 @@ Widget department1ii() {
                           horizontal: 10, vertical: 20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          const Text(
+                        children: const <Widget>[
+                          Text(
                             "Gynaecology",
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          const Text(
+                          Text(
                             "Get the best gynaecologists in your area",
                             style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.normal,
                             ),
                           ),
-                          const Spacer(),
+                          Spacer(),
                         ],
                       ),
                     ),

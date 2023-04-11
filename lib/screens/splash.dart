@@ -2,7 +2,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:virtual_aid/constant/constants.dart';
-import 'package:virtual_aid/screens/bottom_nav_bar.dart';
 import 'package:virtual_aid/screens/login.dart';
 
 void main() {

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:virtual_aid/widgets/book_appointment.dart';
+import 'package:virtual_aid/widgets/appointment.dart';
 
 import '../constant/constants.dart';
 import '../widgets/appbar.dart';
@@ -136,7 +134,7 @@ Widget doctor3i() {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => BookingScreen(),
+              builder: (context) => const BookingScreen(),
             ),
           );
         },
@@ -274,7 +272,7 @@ Widget doctor3ii() {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => BookingScreen(),
+              builder: (context) => const BookingScreen(),
             ),
           );
         },
@@ -359,7 +357,7 @@ Widget doctor3iii() {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => BookingScreen(),
+              builder: (context) => const BookingScreen(),
             ),
           );
         },
@@ -498,7 +496,7 @@ Widget doctor3iv() {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => BookingScreen(),
+              builder: (context) => const BookingScreen(),
             ),
           );
         },
@@ -583,7 +581,7 @@ Widget doctor3ix() {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => BookingScreen(),
+              builder: (context) => const BookingScreen(),
             ),
           );
         },

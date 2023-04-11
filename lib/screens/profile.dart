@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:virtual_aid/constant/constants.dart';
-import 'package:virtual_aid/screens/bottom_nav_bar.dart';
 import 'package:virtual_aid/screens/login.dart';
 import 'package:virtual_aid/screens/payment_history.dart';
 
@@ -57,7 +56,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             children: <Widget>[
                               Row(
                                 children: [
-                                  SizedBox(width: 5),
+                                  const SizedBox(width: 5),
                                   const Icon(Icons.payment),
                                   SizedBox(width: 40),
                                   Text(

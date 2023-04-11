@@ -1,0 +1,10 @@
+^C:\USERS\HP\DESKTOP\MY FINAL YEAR PROJECT\VIRTUAL_AID\BUILD\WINDOWS\CMAKEFILES\A84631F3C3A8F3A350153611C849021B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/HP/Desktop/My Final Year Project/virtual_aid/windows" "-BC:/Users/HP/Desktop/My Final Year Project/virtual_aid/build/windows" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/HP/Desktop/My Final Year Project/virtual_aid/build/windows/virtual_aid.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

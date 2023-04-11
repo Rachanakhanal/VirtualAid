@@ -1,31 +1,27 @@
-import 'package:flutter/material.dart';
-import 'package:virtual_aid/screens/splash.dart';
-import 'constant/constants.dart';
+import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
+import 'package:khalti/khalti.dart';
+import 'package:virtual_aid/controller/hospital_controller.dart';
+import 'package:virtual_aid/screens/login.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // Get.put(Authentication()); //fetches token
+  Get.put(HospitalController()); // fetches categories
+  //Get.put(ServiceController());
+  await Khalti.init(
+    publicKey: 'test_public_key_8697f806a5404a599edded181fd4fcf3',
+    enabledDebugging: false,
+  );
+  runApp(const GetMaterialApp(
+      // navigatorKey: navigatorKey,
+      //   supportedLocales:  [
+      //     Locale('en', 'US'),
+      //     Locale('ne', 'NP'),
+      //   ],
+      //   localizationsDelegates: const [
+      //     KhaltiLocalizations.delegate,
+      //   ],
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Virtual Aid",
-      theme: ThemeData(
-        fontFamily: "Poppins",
-        iconTheme: const IconThemeData(color: primaryColor),
-
-        // ignore: prefer_const_constructors
-        textTheme: TextTheme(
-          bodyText1: const TextStyle(color: primaryColor),
-          bodyText2: const TextStyle(color: textColor2),
-        ),
-      ),
-      home: const SplashScreen(),
-    );
-  }
+      home: Login()));
 }

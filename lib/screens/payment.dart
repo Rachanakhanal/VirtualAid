@@ -1,9 +1,7 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:virtual_aid/constant/constants.dart';
-import 'package:virtual_aid/screens/payment_successful.dart';
-import 'package:virtual_aid/widgets/appbar.dart';
+
+import '../payment/khalti.dart';
 
 class Payment extends StatefulWidget {
   const Payment({super.key});
@@ -21,7 +19,7 @@ class _PaymentState extends State<Payment> {
         appBar: AppBar(
           backgroundColor: primaryColor,
           elevation: 0,
-          title: Text(
+          title: const Text(
             'Payment',
             style: TextStyle(
               color: Colors.white,
@@ -29,17 +27,17 @@ class _PaymentState extends State<Payment> {
               fontWeight: FontWeight.bold,
             ),
           ),
-          iconTheme: IconThemeData(
+          iconTheme: const IconThemeData(
             color: Colors.white,
           ),
         ),
         body: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: SizedBox(
             height: 700,
             child: Column(
               children: [
-                Align(
+                const Align(
                   alignment: Alignment.center,
                 ),
                 SafeArea(
@@ -91,8 +89,8 @@ class _PaymentState extends State<Payment> {
                                             ),
                                           ),
                                         ),
-                                        Center(
-                                          child: const Text(
+                                        const Center(
+                                          child: Text(
                                             "Khalti",
                                             style: TextStyle(
                                               fontSize: 20,
@@ -128,7 +126,7 @@ class _PaymentState extends State<Payment> {
                                             // ),
                                             // ),
                                             Text(
-                                              'Rs. 500',
+                                              'Rs. 10',
                                               style: TextStyle(
                                                 color: primaryColor,
                                                 fontSize: 16,
@@ -161,7 +159,7 @@ class _PaymentState extends State<Payment> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const PaymentSuccessful(),
+                                builder: (context) => const KhaltiExampleApp(),
                               ),
                             );
                           },

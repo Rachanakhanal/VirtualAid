@@ -25,8 +25,8 @@ class _LoginState extends State<Login> {
   final TextEditingController _email = TextEditingController();
   final TextEditingController _password = TextEditingController();
   final GlobalKey<FormState> _fromKey = GlobalKey<FormState>();
-  // final authentication = Get.find<Authentication>();
-  final AuthService authService = AuthService();
+  //final authentication = Get.find<Authentication>();
+  final AuthHospital authService = AuthHospital();
 
   //new
   bool isLoading = false;
@@ -340,7 +340,7 @@ class _LoginState extends State<Login> {
     var data = {'email': email, 'password': password};
 
     var response = await http.post(
-        Uri.parse("http://192.168.1.67/DoctorAppointment_API/login.php"),
+        Uri.parse("http://172.16.19.109/DoctorAppointment_API/login.php"),
         body: json.encode(data));
     Map message = jsonDecode(response.body);
 
@@ -349,13 +349,15 @@ class _LoginState extends State<Login> {
         isLoading = true;
       });
       Future.delayed(const Duration(seconds: 5));
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
+        const SnackBar(
           content: Text('Login Successfully'),
           duration: Duration(seconds: 3),
           backgroundColor: Colors.green,
         ),
       );
+      // ignore: use_build_context_synchronously
       showDialog(
           context: context,
           builder: (BuildContext context) {
@@ -389,7 +391,7 @@ class _LoginState extends State<Login> {
       });
       Future.delayed(const Duration(seconds: 3));
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
+        const SnackBar(
           content: Text('Incorrect email or password'),
           duration: Duration(seconds: 3),
           backgroundColor: Colors.red,

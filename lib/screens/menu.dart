@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:virtual_aid/constant/constants.dart';
 import 'package:virtual_aid/screens/bottom_nav_bar.dart';
-import 'package:virtual_aid/screens/home_page.dart';
-import 'package:virtual_aid/screens/profile.dart';
 
 class MenuPage extends StatefulWidget {
   const MenuPage({super.key});
@@ -56,12 +54,12 @@ class _MenuPageState extends State<MenuPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Row(
-                                children: [
+                                children: const [
                                   SizedBox(
                                     width: 5,
                                   ),
-                                  const Icon(Icons.local_hospital),
-                                  const Spacer(),
+                                  Icon(Icons.local_hospital),
+                                  Spacer(),
                                   Text(
                                     "Book Hospital Appointment",
                                     style: TextStyle(
@@ -69,8 +67,8 @@ class _MenuPageState extends State<MenuPage> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  const Spacer(),
-                                  const Icon(Icons.arrow_forward_ios),
+                                  Spacer(),
+                                  Icon(Icons.arrow_forward_ios),
                                 ],
                               ),
                             ],
@@ -166,12 +164,12 @@ class _MenuPageState extends State<MenuPage> {
                             children: <Widget>[
                               Row(
                                 children: [
-                                  SizedBox(width: 5),
+                                  const SizedBox(width: 5),
                                   const Icon(Icons.abc_outlined),
-                                  SizedBox(width: 40),
+                                  const SizedBox(width: 40),
                                   Text(
                                     "About Us",
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -219,12 +217,12 @@ class _MenuPageState extends State<MenuPage> {
                             children: <Widget>[
                               Row(
                                 children: [
-                                  SizedBox(width: 5),
+                                  const SizedBox(width: 5),
                                   const Icon(Icons.telegram),
-                                  SizedBox(width: 40),
+                                  const SizedBox(width: 40),
                                   Text(
                                     "Follow Us",
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
                                     ),

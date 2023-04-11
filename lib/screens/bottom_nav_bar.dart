@@ -17,9 +17,9 @@ class _HomeScreenState extends State<HomeScreen> {
   int pageIdx = 0;
   //Pages for bottom navigation bar
   final pages = [
-    HomePage(), 
-  ProfilePage(), 
-  MenuPage(),
+    HomePage(),
+    const ProfilePage(),
+    const MenuPage(),
   ];
 
   @override

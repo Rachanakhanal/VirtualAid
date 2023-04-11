@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:virtual_aid/screens/hospital1_details.dart';
 
 class HospitalCard1 extends StatelessWidget {
@@ -80,14 +79,15 @@ class HospitalCard1 extends StatelessWidget {
                 ],
               ),
             ),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Hospital1Details(),
-                ),
-              );
-            },
+
+            //   onTap: () {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(
+            //         builder: (context) => const Hospital1Details(),
+            //       ),
+            //     );
+            //   },
           ),
         ),
       ),

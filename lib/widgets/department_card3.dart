@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:virtual_aid/screens/bottom_nav_bar.dart';
 import 'package:virtual_aid/screens/green_doctors_list.dart';
 
 Widget department3i() {

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:virtual_aid/screens/hospital1_details.dart';
 import 'package:virtual_aid/screens/hospital3_details.dart';
 
 class HospitalCard3 extends StatelessWidget {

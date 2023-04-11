@@ -67,7 +67,7 @@ SliverAppBar appbar() {
       child: Container(
         padding: const EdgeInsets.only(left: 20, bottom: 5),
         child: Column(
-          children: [search()],
+          children: [SearchWidget()],
         ),
       ),
     ),

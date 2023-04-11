@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:virtual_aid/constant/constants.dart';
 import 'package:virtual_aid/screens/bottom_nav_bar.dart';
-import 'package:virtual_aid/widgets/appbar.dart';
 
 class PaymentSuccessful extends StatefulWidget {
   const PaymentSuccessful({super.key});
@@ -48,7 +47,9 @@ class _PaymentSuccessfulState extends State<PaymentSuccessful> {
                     children: <Widget>[
                       Column(
                         children: const [
-                      SizedBox(height: 20,),
+                          SizedBox(
+                            height: 20,
+                          ),
                           Center(
                             child: Text(
                               "Your appointment has been booked",
@@ -77,6 +78,12 @@ class _PaymentSuccessfulState extends State<PaymentSuccessful> {
                       Navigator.of(context).pushReplacement(MaterialPageRoute(
                           builder: (context) => const HomeScreen()));
                     },
+                    style: ElevatedButton.styleFrom(
+                      primary: primaryColor,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
                     child: const Text(
                       "Go to Home page!",
                       style: TextStyle(
@@ -84,12 +91,6 @@ class _PaymentSuccessfulState extends State<PaymentSuccessful> {
                         fontSize: 14,
                         fontFamily: "Poppins",
                         fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      primary: primaryColor,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
                       ),
                     ),
                   ),

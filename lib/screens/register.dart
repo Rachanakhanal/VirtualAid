@@ -270,7 +270,7 @@ class _RegisterState extends State<Register> {
                         ),
                         Text(
                           message,
-                          style: TextStyle(color: Colors.red),
+                          style: const TextStyle(color: Colors.red),
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -405,7 +405,7 @@ class _RegisterState extends State<Register> {
 
     print(data);
     var response = await http.post(
-        Uri.parse("http://192.168.1.67/DoctorAppointment_API/signup.php"),
+        Uri.parse("http://10.10.145.198/DoctorAppointment_API/signup.php"),
         body: json.encode(data),
         headers: {"Content-Type": "application/json"});
     var message = jsonDecode(response.body);
